@@ -1,0 +1,10 @@
+<h1 name="question"><%= @riddle %></h1>
+
+<p><b><%= @clue %></b></p>
+<p><b><%= @chance %></b></p>
+<p><b><%= @correct_answer %></b></p>
+<form  action="\output" method="post">
+  <input type="hidden" name="question"  value="<%= @riddle %>">
+  <input type="text" name="answer" placeholder="Enter your answer">
+  <input type="submit" name="submit_button" value="Submit">
+</form>
